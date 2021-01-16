@@ -23,35 +23,35 @@
 }
 .three {
   left: 10%;
-  top: 140%;
+  top: 10%;
 }
 .four {
   left: 10%;
-  top: 155%;
+  top: 40%;
 }
 .five {
   left: 10%;
-  top: 390%;
+  top: 10%;
 }
 .six {
   left: 12%;
-  top: 400%;
+  top: 40%;
 }
 .seven {
   left: 12%;
-  top: 405%;
+  top: 55%;
 }
 .eight {
-  left: 3%;
-  top: 240%;
+  left: 2.5%;
+  top: 120%;
 }
 .nine {
-  left:76%;
-  top: 250%;
+  left:5%;
+  top: 230%;
 }
 .ten {
-  left: 80%;
-  top: 275%;
+  left: 2.5%;
+  top: 380%;
 }
 .eleven {
   left: 5%;
@@ -72,3 +72,6 @@ h2 {
   display: flex;
 }
 
+* {
+  margin:0; padding:0;
+}

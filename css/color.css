@@ -42,3 +42,11 @@ div.flex-container {
 	transform: translateY(200%);
 	margin-bottom: 10px
 }
+
+body {
+	background: linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
+}
+
+p, h2, h3{
+	color:#FFFFFF
+}
