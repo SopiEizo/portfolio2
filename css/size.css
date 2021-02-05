@@ -1,19 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
-#example{
-  width:auto;
-}
+.sitesize {width: 100%;}
+
 /*親要素をrelativeに*/
 #example {
   position: relative;
 }
 /*3つともabsoluteに*/
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+.zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
   position: absolute;
 }
-.one {
+.zero {
   left: 50%;
   top: 50%;
+}
+.one {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+	-webkit-transform : translate(-50%,-50%);
 	transform: translate(-50%,-50%)
 }
 .two {
@@ -51,7 +56,7 @@
 }
 .ten {
   left: 2.5%;
-  top: 380%;
+  top: 1000%;
 }
 .eleven {
   left: 5%;
@@ -59,7 +64,7 @@
 }
 .twelve {
   left: 8%;
-  top: 325%;
+  top: 100%;
 }
 /*色付けなどは省略*/
 h2 {
