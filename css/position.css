@@ -5,6 +5,10 @@ header {
 	right: 17%;
 }
 
+li {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
 #site-box { Width : 750px ; }
 
 .motext {
@@ -105,7 +109,7 @@ header {
 	margin-right: auto;
 	margin-bottom: 30%;
 	position: absolute;
-  top: 200%;
+	top: 170%;
 	font-size: 150%;
 	color: #000000;
 	-webkit-transform : translate(-50%,-50%);
@@ -131,4 +135,17 @@ header {
 }
 .item{
 	width: 10%;
+}
+
+.zentai {
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.zentaikodomo {
+	order: 1;
+}
+.zentaikodomo2 {
+	order: 2;
 }
