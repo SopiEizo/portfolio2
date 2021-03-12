@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.f-container {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-around;
+}
+
+.f-item {
+	
+}

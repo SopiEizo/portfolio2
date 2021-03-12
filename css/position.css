@@ -7,6 +7,11 @@ header {
 
 li {
 	font-family: 'Julius Sans One', sans-serif;
+	text-align: right;
+}
+
+.font {
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 #site-box { Width : 750px ; }
@@ -48,6 +53,7 @@ li {
 
 .flex-container{
 		display:flex;
+		flex-direction: row-reverse;
 }
 
 /* ------------- スクロールフェードインDown用 ------------- */
@@ -143,9 +149,7 @@ li {
 	justify-content: center;
 }
 
-.zentaikodomo {
-	order: 1;
-}
-.zentaikodomo2 {
-	order: 2;
+h1 {
+		height: 1rem;
+	text-align: center;
 }
