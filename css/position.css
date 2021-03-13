@@ -18,6 +18,14 @@ a {
 	font-family: 'Julius Sans One', sans-serif;
 }
 
+.font2 {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.font3 {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
 #site-box { Width : 750px ; }
 
 .motext {
@@ -30,9 +38,9 @@ a {
 @keyframes fadein-bottom {
    0% {
       opacity: 0;
-      transform: translateY(20px);
-	   transform: translateX(0px);
-	   	-webkit-transform : translate(-50%,20%);
+      transform: translateY(0px);
+	   transform: translateX(50px);
+	   	-webkit-transform : translate(-50%,-20%);
 	transform: translate(-50%,20%)
    }
    100% {
@@ -58,6 +66,7 @@ a {
 .flex-container{
 		display:flex;
 		flex-direction: row-reverse;
+	z-index: 1;
 }
 
 /* ------------- スクロールフェードインDown用 ------------- */
@@ -73,11 +82,11 @@ a {
  visibility: visible !important;
 }
 @-webkit-keyframes fadeInDown {
- 0% { opacity: 0; -webkit-transform: translateY(20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); }
+ 0% { opacity: 0; -webkit-transform: translateX(80px) translateY(0px); }
+ 100% { opacity: 1; -webkit-transform: translateX(0) translateY(0); }
 }
 @keyframes fadeInDown {
- 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 0% { opacity: 0; -webkit-transform: translateX(80px) translateY(0px); -ms-transform: translateX(80px) translateY(0px); transform: translateX(80px) translateY(0px); }
  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
 /* ------------- スクロールフェードインDown用 END ------------- */
@@ -156,4 +165,13 @@ a {
 h1 {
 		height: 1rem;
 	text-align: center;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+.leftfont{
+	margin-left: 10%;
+	text-align: left;
 }

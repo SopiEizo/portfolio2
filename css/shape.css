@@ -14,4 +14,6 @@
    background: #FFFFFF;
 	filter: drop-shadow(0px 5px 8px #B7C6E6);
 	border-radius: 100px 100px 100px 100px;
+	position: absolute;
+	z-index: auto;
 }
