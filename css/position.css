@@ -181,3 +181,12 @@ h2 {
 	margin-top: 120%;
 	font-size: 130%;
 }
+
+.unko {
+	position: absolute;
+	margin-top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
