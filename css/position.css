@@ -175,7 +175,6 @@ h2 {
 .leftfont{
 	margin-left: 10%;
 	text-align: left;
-	margin-top: 90px;
 }
 
 .Aboutme {
@@ -190,4 +189,9 @@ h2 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
 }
