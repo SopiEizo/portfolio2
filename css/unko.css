@@ -15,6 +15,12 @@ h1{
   top: 10px; 
 }
 
+.kotei2 {
+  position: fixed;
+  bottom: 1%;
+left: 5%;
+}
+
 /* shape */
 .triangle {
    width: 100%;
