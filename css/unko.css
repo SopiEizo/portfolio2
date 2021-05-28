@@ -21,6 +21,29 @@
 }
 /* ------------- スクロールフェードインDown用 END ------------- */  
 
+/* ------------- スクロールフェードインDown用 ------------- */
+.popout {
+  border-bottom: solid 0px #000; /* 装飾用の下線 */
+  display: inline-block;         /* 装飾用。なくても可。 */
+  padding: 0 5px;                /* 装飾用。なくても可。 */
+  overflow: hidden;              /* はみ出た分を非表示 */
+}
+
+.popout span {
+  position: relative; /* bottomを指定するために必要 */
+  animation: popanime 1s cubic-bezier(.76,0,0,1.03); /* 最後ゆっくりになるアニメを1秒かけて1回だけやったあと固定 */
+}
+
+@keyframes popanime {
+  from {
+    bottom: -120px; /* 親要素外に配置させて見えなくしておく */
+  }
+  to {
+    bottom: 0px;　 /* 下から0pxに指定 */
+  :active}
+}
+
+/* ------------- スクロールフェードインDown用 END ------------- */  
 
 /* Fonts */
 
