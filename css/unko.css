@@ -17,8 +17,9 @@ h1{
 
 .kotei2 {
   position: fixed;
-  bottom: 1%;
+  bottom: -34%;
 left: 5%;
+	width: 40%; height: 40%;
 }
 
 /* shape */
@@ -126,6 +127,11 @@ bottom: 1%; /* 上から10px */
 left: 5%; /* 左から20px */
 }
 
+.position8 {
+position: absolute; /* 今の位置を基準 */
+top: 40%; /* 上から10px */
+right: 2%; /* 左から20px */
+}
 
 /* SNS */
 .follow-me {
