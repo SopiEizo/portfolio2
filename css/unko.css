@@ -189,6 +189,11 @@ top: 40%; /* 上から10px */
 right: 2%; /* 左から20px */
 }
 
+.unko{
+ width: 10%;
+  height: 10%;
+}
+
 /* SNS */
 .follow-me {
   list-style: none;
