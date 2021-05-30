@@ -46,7 +46,7 @@
 /* ------------- スクロールフェードインDown用 END ------------- */  
 
 .fadein {
-	opacity : 0.1;
+	opacity : 0;
 	transform : translate(0, 50px);
 	transition : all 500ms;
 	}
