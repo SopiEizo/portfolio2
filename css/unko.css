@@ -194,6 +194,14 @@ right: 2%; /* 左から20px */
   height: 10%;
 }
 
+iframe {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /* SNS */
 .follow-me {
   list-style: none;
