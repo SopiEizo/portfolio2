@@ -45,9 +45,55 @@
 
 /* ------------- スクロールフェードインDown用 END ------------- */  
 
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+#effect2 > span:nth-child(2) {
+	-moz-transition-delay:2s;
+	-webkit-transition-delay:2s;
+	-o-transition-delay:2s;
+	-ms-transition-delay:2s;
+	}
+
+#effect2 > span:nth-child(3) {
+	-moz-transition-delay:3s;
+	-webkit-transition-delay:3s;
+	-o-transition-delay:3s;
+	-ms-transition-delay:3s;
+	}
+
+#effect2 > span:nth-child(4) {
+	-moz-transition-delay:4s;
+	-webkit-transition-delay:4s;
+	-o-transition-delay:4s;
+	-ms-transition-delay:4s;
+	}
+
+#effect2 > span:nth-child(5) {
+	-moz-transition-delay:5s;
+	-webkit-transition-delay:5s;
+	-o-transition-delay:5s;
+	-ms-transition-delay:5s;
+	}
+
+#effect2 > span:nth-child(6) {
+	-moz-transition-delay:6s;
+	-webkit-transition-delay:6s;
+	-o-transition-delay:6s;
+	-ms-transition-delay:6s;
+	}
+
 /* Fonts */
 
-h1{
+h1, li{
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -64,6 +110,12 @@ h2{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content: space-around;
+}
+
+.f-container3{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
 }
 
 .kotei {
