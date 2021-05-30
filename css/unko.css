@@ -112,6 +112,12 @@ h2{
 	justify-content: space-around;
 }
 
+.f-container4{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
 .f-container3{
 	display:flex;
 	flex-wrap:wrap;
@@ -252,6 +258,15 @@ right: 2%; /* 左から20px */
   right: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+ol {
+	background: #2C2C2C;
+	border: 2px #F7F53E dashed;
+}
+
+li {
+	list-style: none;
 }
 
 /* SNS */
