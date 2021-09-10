@@ -1,5 +1,20 @@
 @charset "utf-8";
-/* ------------- スクロールフェードインDown用 ------------- */
+
+::-moz-selection {
+    background-color: #F7F53E;
+}
+::selection {
+    background-color: rgb(247, 245, 62);
+}
+
+::-moz-selection {
+    color: #2C2C2C;
+}
+::selection {
+    color: #2C2C2C;
+}
+
+/* ------------- ��鴻����㏍�若�������с�若����ゃ��Down��� ------------- */
 .fadeInDown {
  -webkit-animation-fill-mode:both;
  -ms-animation-fill-mode:both;
@@ -19,31 +34,31 @@
  0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
-/* ------------- スクロールフェードインDown用 END ------------- */  
+/* ------------- ��鴻����㏍�若�������с�若����ゃ��Down��� END ------------- */  
 
-/* ------------- スクロールフェードインDown用 ------------- */
+/* ------------- ��鴻����㏍�若�������с�若����ゃ��Down��� ------------- */
 .popout {
-  border-bottom: solid 0px #000; /* 装飾用の下線 */
-  display: inline-block;         /* 装飾用。なくても可。 */
-  padding: 0 5px;                /* 装飾用。なくても可。 */
-  overflow: hidden;              /* はみ出た分を非表示 */
+  border-bottom: solid 0px #000; /* 茖�蕋丞�����筝�膩� */
+  display: inline-block;         /* 茖�蕋丞����������������������� */
+  padding: 0 5px;                /* 茖�蕋丞����������������������� */
+  overflow: hidden;              /* �����水�冴�����������茵�腓� */
 }
 
 .popout span {
-  position: relative; /* bottomを指定するために必要 */
-  animation: popanime 1s cubic-bezier(.76,0,0,1.03); /* 最後ゆっくりになるアニメを1秒かけて1回だけやったあと固定 */
+  position: relative; /* bottom������絎����������������綽�荀� */
+  animation: popanime 1s cubic-bezier(.76,0,0,1.03); /* ���緇������ｃ����������������≪����＜��1腱����������1��������������ｃ����������阪�� */
 }
 
 @keyframes popanime {
   from {
-    bottom: -120px; /* 親要素外に配置させて見えなくしておく */
+    bottom: -120px; /* 荀�荀�膣�紊�������臀����������荀���������������������� */
   }
   to {
-    bottom: 0px;　 /* 下から0pxに指定 */
+    bottom: 0px;��� /* 筝�������0px������絎� */
   :active}
 }
 
-/* ------------- スクロールフェードインDown用 END ------------- */  
+/* ------------- ��鴻����㏍�若�������с�若����ゃ��Down��� END ------------- */  
 
 .fadein {
 	opacity : 0;
@@ -200,51 +215,51 @@ left: 5%;
 
 /* position */
 .position {
-position: absolute; /* 今の位置を基準 */
-top: 40%; /* 上から10px */
-left: 15%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 40%; /* 筝�������10px */
+left: 15%; /* 綏�������20px */
 }
 
 .position2 {
-position: absolute; /* 今の位置を基準 */
-top: 40%; /* 上から10px */
-right: 15%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 40%; /* 筝�������10px */
+right: 15%; /* 綏�������20px */
 }
 
 .position3 {
-position: absolute; /* 今の位置を基準 */
-top: 60%; /* 上から10px */
-right: 15%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 60%; /* 筝�������10px */
+right: 15%; /* 綏�������20px */
 }
 
 .position4 {
-position: absolute; /* 今の位置を基準 */
-top: 80%; /* 上から10px */
-right: 15%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 80%; /* 筝�������10px */
+right: 15%; /* 綏�������20px */
 }
 
 .position5 {
-position: absolute; /* 今の位置を基準 */
-top: 60%; /* 上から10px */
-right: 30%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 60%; /* 筝�������10px */
+right: 30%; /* 綏�������20px */
 }
 
 .position6 {
-position: absolute; /* 今の位置を基準 */
-top: 70%; /* 上から10px */
-right: 35%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 70%; /* 筝�������10px */
+right: 35%; /* 綏�������20px */
 }
 
 .position7 {
-position: absolute; /* 今の位置を基準 */
-bottom: 1%; /* 上から10px */
-left: 5%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+bottom: 1%; /* 筝�������10px */
+left: 5%; /* 綏�������20px */
 }
 
 .position8 {
-position: absolute; /* 今の位置を基準 */
-top: 40%; /* 上から10px */
-right: 2%; /* 左から20px */
+position: absolute; /* 篁����篏�臀������堺�� */
+top: 40%; /* 筝�������10px */
+right: 2%; /* 綏�������20px */
 }
 
 .unko{
