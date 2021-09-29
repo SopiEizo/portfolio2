@@ -295,6 +295,52 @@ a:hover {
 
 }
 
+/* WorksAbout26 text animation */
+.btn {
+	position: relative;
+	display: inline-block;
+	background-color: #2C2C2C;
+	width: 100%; /* 横幅 */
+	height: 120px; /* 縦幅 */
+	line-height: 60px; /* 行の高さ(heightと同じ値にする) */
+	text-decoration: none; /* aタグのアンダーラインを消す */
+	overflow: hidden; /* はみ出し部分を隠す */
+	cursor: pointer; /* カーソルをポインターにする */
+  }
+
+/* ボタンのテキスト */
+.btn__text {
+	position: absolute;
+	left: 0;
+	display: block;
+	height: 100%; /* 縦幅をボタンと同じにする */
+	width: 100%; /* 横幅をボタンと同じにする */
+	color: #fff; /* 文字色 */
+	text-align: center; /* テキストを中央揃え */
+	transition: all 0.3s; /* アニメーション実行時間 */
+	overflow: hidden;
+  }
+  
+  /* ボタンのテキスト(デフォルトのテキスト) */
+  .btn__text:nth-child(1) {
+	top: 0;
+  }
+  
+  /* ボタンのテキスト(隠れているテキスト) */
+  .btn__text:nth-child(2) {
+	top: -100%;
+  }
+  
+  /* ボタンホバーアクション */
+  .btn:hover .btn__text:nth-child(1) {
+	top: 100%;
+  }
+  
+  .btn:hover .btn__text:nth-child(2) {
+	top: 0;
+  }
+
+
 /* SNS */
 .follow-me {
   list-style: none;
