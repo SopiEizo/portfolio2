@@ -1,0 +1,262 @@
+@charset "UTF-8";
+html{
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+.bgcycle {
+    width: 100px;
+    height: 100px;
+    color: #E36255;
+}
+.area1 {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.sopieizo {
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 6vw;
+    padding-top: 50vh;
+}
+.sopieizo2 {
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 2vw;
+    border-top: 1px solid #ffffff;
+}
+.sopieizo3 {
+    margin-left: 3%;
+    color: #dfdfdf;
+    font-size: 30%;
+    letter-spacing: 2px;
+    padding-bottom: 20vh;
+}
+
+.hdb {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hdbf1 {
+    color: #ffffff;
+    margin-left: 2vw;
+    font-size: 150%;
+}
+a:hover{
+    transition: .2s;
+    text-decoration: underline dotted rgb(0, 153, 255);
+}
+
+.hdbf2 {
+    color: #ffffff;
+    text-align: right;
+    margin-right: 2vw;
+    font-size: 150%;
+}
+
+.area1 {
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.area2 {
+    width: 100vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    line-height: 35vh;
+    }
+    
+    .div1 {
+        grid-area: 1 / 1 / 2 / 6; 
+        font-size: 2vw;
+        opacity: 0;
+    }
+    .div2 { 
+        grid-area: 1 / 6 / 2 / 8; 
+        font-size: 10vw;
+        opacity: 0;
+    }
+    .div3 { 
+        grid-area: 2 / 1 / 3 / 6; 
+        font-size: 6vw;
+        opacity: 0;
+    }
+    .div4 { 
+        grid-area: 2 / 6 / 3 / 8; 
+        font-size: 2vw;
+        opacity: 0;
+    }
+    .div5 { 
+        grid-area: 3 / 1 / 4 / 4; 
+        font-size: 2vw;
+        opacity: 0;
+    }
+    .div6 { 
+        grid-area: 3 / 4 / 4 / 8; 
+        font-size: 6vw;
+        opacity: 0;
+    }
+
+.news01 {
+    font-size: 3vw;
+}
+
+.hr01 {
+    border-top: 2px dashed rgb(0, 0, 0);
+    width: 100%;
+    margin-left: 1px;
+}
+
+.newscf {
+    font-size: 1.5vw;
+    padding-right: 7vh;
+}
+
+.newscf{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.newscfitem01 {
+	-webkit-flex: 0 1 30%;
+	flex: 0 1 30%;
+}
+.newscfitem02 {
+	-webkit-flex: 0 1 30%;
+	flex: 0 1 30%;
+}
+.newscfitem03 {
+	-webkit-flex: 0 1 30%;
+	flex: 0 1 30%;
+}
+
+footer {
+    width: 101%;
+    height: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: black;
+}
+.fot {
+    font-size: 150%;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: black;
+}
+
+.newsa {
+    transition: 0.3s;
+}
+.newsa:hover {
+    transition: 0.3s;
+    color: rgb(40, 30, 129);
+    text-decoration: underline dotted rgb(0, 153, 255);
+}
+
+/*========= 背景動画設定のCSS ===============*/
+
+/*header設定*/
+#header{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.videop {
+    filter: blur(10px) brightness(58%) grayscale(22%);
+    position: absolute;
+    left: -10px;
+}
+.video-areaa {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#scrooll {
+
+    opacity:0;
+    }
+    
+    
+    .alpha {
+    
+    animation:alpha 1s;
+    animation-fill-mode:forwards;
+    }
+    
+    
+    @keyframes alpha {
+    
+    0% {
+    
+    opacity:0;
+    transform: translateY(120px)scaleY(150%);
+    }
+    
+    
+    100% {
+    
+    opacity:1;
+    transform: translateY(0px)scaleY(100%);
+    }
+    
+    }

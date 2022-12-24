@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'min';
+    src: url('/font/Rg/LINESeedJP_TTF_Rg.eot') format('oldIE'),
+        url('/font/Rg/LINESeedJP_OTF_Rg.woff') format('woff'),
+        url('/font/Rg/LINESeedJP_TTF_Rg.ttf') format('truetype');
+}
+.min{
+    font-family: 'min';
+}
+
+@font-face {
+    font-family: 'Bd';
+    src: url('/font/Bd/LINESeedJP_TTF_Bd.eot') format('oldIE'),
+        url('/font/Bd/LINESeedJP_OTF_Bd.woff') format('woff'),
+        url('/font/Bd/LINESeedJP_TTF_Bd.ttf') format('truetype');
+}
+.Bd{
+    font-family: 'Bd';
+}
+
+h1 {
+    font-family: 'min';
+}
