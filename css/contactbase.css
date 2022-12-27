@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.area2 {
+    padding-left: 7vw;
+}
+
+.price {
+    font-size: 4vw;
+}
+.price2 {
+    font-size: 2vw;
+}
+.price3 {
+    font-size: 1vw;
+}
+
+.fadein {
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 500ms;
+    margin-bottom: 2vh;
+	}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
