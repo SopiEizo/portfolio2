@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
     <head>
-        <title>Works</title>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/reset.css">
+        <title>test</title>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/worksbase.css">
+        <link rel="stylesheet" href="css/mobile/works-base.css" media="screen and (max-width:1023px)">
+        <link rel="stylesheet" href="css/works-base.css" media="screen and (min-width:1024px)">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/Gamennai_animation.js"></script>
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
         <!-- moment.jsの読み込み -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -21,71 +20,18 @@
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
-        <div class="hdb">
-            <h1 class="hdbf1">sopieizo.work</h1>
-            <h1 class="hdbf2">
-                <a href="/index.html">HOME</a>
-                 / 
-                <a href="/works.html">WORKS</a>
-                  / 
-                <a href="/contact.html">CONTACT</a>
-                   / 
-                <a href="https://note.com/sopi_note">BLOG</a>
-            </h1>
-        </div>     
-        <div class="area1">
-            <h1 class="sopieizo">WORKS</h1>
-            <h1 class="sopieizo2">Lyrics motion / Motion graphics / 3DCG / MV / Reel</h1>
-            <h1 class="sopieizo3">The background is Reel2023</h1>
+        <div class="workstitle">
+            <div class="Tline inline"></div>
+            <h1 class="inline"><span class="WORKSCSS">WORKS</span><span class="WorksD">Lyrics motion / Motion graphics / 3DCG / MV / Reel</span></h1>
         </div>
-        <div id="video-area" class="video-areaa">
-            <video src="/op.webm" poster="img/movie.jpg" class="videop" webkit-playsinline playsinline muted autoplay loop></video>
+        <div class="flex-boxw" id="works-list">
         </div>
-        <!--ここから下が内容 上はコピペ-->
-        <div style="background-color: white; width: 101vw; padding-top: 2vh; padding-bottom: 2vh;">
-            <div class="container fadein">
-                <div class="fadein"><a href="WorksAbout37.html" target="_blank"><img src="img/photo_00037.webp"></a><h1 style="color: #000">#HE4DSHOT<br><h1 style="color:#2c2c2c; font-size: 50%;" >依頼</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/3LfsMDUqtNg" target="_blank"><img src="img/photo_00036.webp"></a><h1 style="color: #000">不埒な喝采<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/c5yCxvqS1mU" target="_blank"><img src="img/photo_00035.webp"></a><h1 style="color: #000">ルマ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/BH7q0iOo3do" target="_blank"><img src="img/photo_00034.webp"></a><h1 style="color: #000">ローリンガール<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/P1a36wPxmRs" target="_blank"><img src="img/photo_00033.webp"></a><h1 style="color: #000000">コスモスパイス<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/atg0sEPeMZk" target="_blank"><img src="img/photo_00032.webp"></a><h1 style="color: #000">限界合作9 個人パート<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/pEGVHT5nL64" target="_blank"><img src="img/photo_00031.webp"></a><h1 style="color: #000">アンテナ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="WorksAbout30.html" target="_blank"><img src="img/photo_00030.webp"></a><h1 style="color: #000">Origin<br><h1 style="color:#2c2c2c; font-size: 50%;" >依頼</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/n2rsh4x0ffg" target="_blank"><img src="img/photo_00029.webp"></a><h1 style="color: #000">Reel2022<br><h1 style="color:#2c2c2c; font-size: 50%;" >Reel</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/oB4CccaxTeE" target="_blank"><img src="img/photo_00028.webp"></a><h1 style="color: #000">祈りは空っぽ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://twitter.com/Sopi_Eizo2/status/1451925916376977412?s=20" target="_blank"><img src="img/photo_00027.webp"></a><h1 style="color: #000">シックワールド症候群<br><h1 style="color:#2c2c2c; font-size: 50%;" >限界映像大会</h1></h1></div>
-                <div class="fadein"><a href="https://sopieizo.work/worksabout26" target="_blank"><img src="img/photo_00026.webp"></a><h1 style="color: #000; font-size: auto;"><span class="btn"><span class="btn__text">『僕×君チェックメイト』</span><span class="btn__text" style="font-size: 100%;"> song collection Gambét 1st single <br>『僕×君チェックメイト』</span></span><br><h1 style="color:#2c2c2c; font-size: 50%; position: absolute; top: 80%;" >依頼</h1></h1></div>
-                <div class="fadein"><a href="https://sopieizo.work/worksabout25" target="_blank"><img src="img/photo_00025.webp"></a><h1 style="color: #000">OS-1合作<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/EYYYR-rzpdQ" target="_blank"><img src="img/photo_00024.webp"></a><h1 style="color: #000">デンパラダイム<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://twitter.com/ningen0601/status/1422217692115652609?s=20" target="_blank"><img src="img/photo_00023.webp"></a><h1 style="color: #000">ア ネ モ ネ 合 作<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://sopieizo.work/worksabout22" target="_blank"><img src="img/photo_00022.webp"></a><h1 style="color: #000">凛として、疾走<br><h1 style="color:#2c2c2c; font-size: 50%;" >依頼</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/QrM1xplANPQ" target="_blank"><img src="img/photo_00021.webp"></a><h1 style="color: #000">universe<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/gspRJPAlY8w" target="_blank"><img src="img/photo_00020.webp"></a><h1 style="color: #000">聖槍爆裂ボーイ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/Dntl_-gee7g" target="_blank"><img src="img/photo_00019.webp"></a><h1 style="color: #000">ナンセンスの塊<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/QnE9dnwGTd4" target="_blank"><img src="img/photo_00018.webp"></a><h1 style="color: #000">ヴァンパイア<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/FhVDiewQNJk" target="_blank"><img src="img/photo_00017.webp"></a><h1 style="color: #000">無名<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/eIh_2S-6bVo" target="_blank"><img src="img/photo_00016.webp"></a><h1 style="color: #000">マエガミスト<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/KqXmYkrMjVI" target="_blank"><img src="img/photo_00015.webp"></a><h1 style="color: #000">第五回連投合作　個人パート <br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/R3JLO-eswmM" target="_blank"><img src="img/photo_00014.webp"></a><h1 style="color: #000">さよならジャックポット <br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/e72OejktMIs" target="_blank"><img src="img/photo_00013.webp"></a><h1 style="color: #000; font-size: 180%;">くちくっ鯖合作2nd 個人パート<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/VQZGb79wsuw" target="_blank"><img src="img/photo_00012.webp"></a><h1 style="color: #000">限界合作8 個人パート<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/q7-0UxJB6DA" target="_blank"><img src="img/photo_00011.webp"></a><h1 style="color: #000">第四回連投合作　個人パート<br><h1 style="color:#2c2c2c; font-size: 50%;" >合作</h1></h1></div>
-                <div class="fadein"><a href="https://twitter.com/Sopi_Eizo2/status/1342419430018465792?s=20" target="_blank"><img src="img/photo_00010.webp"></a><h1 style="color: #000">ｸ ﾘ ｽ ﾏ ｽ ﾓ ｰ ｼ ｮ ﾝ ｸﾞ ﾗ ﾌ ｨ ｯ ｸ ｽ<br><h1 style="color:#2c2c2c; font-size: 50%;">自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/JuCsyAnirAQ" target="_blank"><img src="img/photo_00009.webp"></a><h1 style="color: #000">PVSF2020R アーライピー<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/jZ624CiX9LA" target="_blank"><img src="img/photo_00008.webp"></a><h1 style="color: #000; font-size: 110%;">PVSFmini ジャンキーナイトタウンオーケストラ<br><h1 style="color:#2c2c2c; font-size: 90%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/Qf2cRmn7Tu0" target="_blank"><img src="img/photo_00007.webp"></a><h1 style="color: #000">空中分解<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/2_pfjzoY-xY" target="_blank"><img src="img/photo_00006.webp"></a><h1 style="color: #000">Small planet<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/nIhj1-3-cvU" target="_blank"><img src="img/photo_00005.webp"></a><h1 style="color: #000">Minimal sunset<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/M1t79yFPbBU" target="_blank"><img src="img/photo_00004.webp"></a><h1 style="color: #000">スヂ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/CpVY-Xj1QXs" target="_blank"><img src="img/photo_00003.webp"></a><h1 style="color: #000">インドア系ならトラックメイカー<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/r_m14ScRpSw" target="_blank"><img src="img/photo_00002.webp"></a><h1 style="color: #000">夜咄ディセイブ<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/1-lNK0IS61k" target="_blank"><img src="img/photo_00000.webp"></a><h1 style="color: #000">自主制作2<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-                <div class="fadein"><a href="https://youtu.be/2dfAPaYMzy0" target="_blank"><img src="img/photo_00001.webp"></a><h1 style="color: #000">アウトサイダー<br><h1 style="color:#2c2c2c; font-size: 50%;" >自主制作</h1></h1></div>
-            </div>
+        <div class="leftba">
+            <a href="index.html" style="text-decoration: none;"><div class="back">←</div></a>
+            <h1 class="flex-item1">WORKS</h1>
+            <h1 class="flex-hover"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT</a></h1>
+            <h1 class="flex-hover"><a href="comission.html" style="text-decoration: none; color: white;">COMISSION</a></h1>
         </div>
     </body>
-    <footer>
-        <h1 class="fot Bd">©2023 SOPI</h1>
-    </footer>
+    <script src="./js/works.js"></script>
 </html>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
     <head>
-        <title>sopieizo.work</title>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/reset.css">
+        <title>test</title>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/indexbase.css">
+        <link rel="stylesheet" href="css/mobile/index-base.css" media="screen and (max-width:1023px)">
+        <link rel="stylesheet" href="css/index-base.css" media="screen and (min-width:1024px)">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
         <!-- moment.jsの読み込み -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,48 +20,15 @@
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
-        <div class="hdb">
-            <h1 class="hdbf1">sopieizo.work</h1>
-            <h1 class="hdbf2">
-                <a href="/index.html">HOME</a>
-                 / 
-                <a href="/works.html">WORKS</a>
-                  / 
-                <a href="/contact.html">CONTACT</a>
-                   / 
-                <a href="https://note.com/sopi_note">BLOG</a>
-            </h1>
+        <div class="flex-a">
+            <h1 class="flex-item1"><a href="works.html" class="flex-item1">WORKS</a></h1>
+            <h1 class="flex-hover"><a href="contact.html" style="color: white;">CONTACT</a></h1>
+            <h1 class="flex-hover"><a href="comission.html" style="color: white;">COMISSION</a></h1>
         </div>
-        <div class="area1">
-            
-            <h1 class="sopieizo">SOPI_EIZO</h1>
-            <h1 class="sopieizo2">Lyrics motion / Motion graphics / 3DCG / MV / <a href="https://twitter.com/Sopi_Eizo2?s=20&t=axoV8xQbclyS_y2JXVfUQQ">Twitter</a> / <a href="https://www.youtube.com/channel/UCQFGqlWPx4DsrAB3hkfOrJA">YouTube</a> / Unko</h1>
-            <h1 class="sopieizo3">The background is Reel2023</h1>
+        <div class="newsbox">
+            <p>news</p>
+            <div class="area2" id="news-list"></div> 
         </div>
-        <div id="video-area" class="video-areaa">
-            <video src="/op.webm" poster="img/movie.jpg" class="videop" webkit-playsinline playsinline muted autoplay loop></video>
-        </div>
-        <div style="background-color: white; width: 101vw;">
-        <!--ここから下が内容 上はコピペ-->
-        <div class="parent">
-            <div class="div1" id="scroll" style="animation-delay: .3s;"><h1 class="Bd">SOPI(@Sopi_Eizo2)　←</h1></div>
-            <div class="div2" id="scroll"><h1 class="Bd">誰？</h1></div>
-            <div class="div3" id="scroll"><h1 class="Bd">何をしてるの？？</h1></div>
-            <div class="div4" id="scroll" style="animation-delay: .3s;"><h1 class="Bd">→　映像を作っています</h1></div>
-            <div class="div5" id="scroll" style="animation-delay: .3s;"><h1 class="Bd">Twitterかblogを見てね　←</h1></div>
-            <div class="div6" id="scroll"><h1 class="Bd">具体的には？？？</h1></div>
-        </div>
-        <div class="area2">
-            <h1 class="news01 Bd">News</h1>
-        </div>
-        <hr class="hr01">
-        <div class="area2" id="news-list">
-        </div>
-    </div>
-    <script src="js/scroll.js"></script>
     </body>
-    <footer>
-        <h1 class="fot Bd">©2023 SOPI</h1>
-    </footer>
-    <script src="./js/newscms.js"></script>
+    <script src="./js/news.js"></script>
 </html>
