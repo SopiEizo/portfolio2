@@ -129,6 +129,11 @@ h1 {
 }
 .simg {
     width: 28vw;
+    transition: .3s;
+}
+.simg:hover {
+    box-shadow: 0px 0px 40px 1px #c9c9c9;
+    transition: .3s;
 }
 .contentstitle {
     font-size: 3em;
