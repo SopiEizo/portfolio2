@@ -51,7 +51,7 @@ h1 {
 
 .flex-boxw {
     width: 85vw;
-    margin-left: 14vw;
+    margin-left: 13vw;
     display: flex;
     flex-wrap: wrap;
     padding-left: 1vw;
@@ -65,7 +65,7 @@ h1 {
 }
 
 .leftba {
-    width: 13vw;
+    width: 12vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.89);
     position: fixed;
