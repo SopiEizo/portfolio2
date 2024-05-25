@@ -137,3 +137,12 @@ h1 {
     color: rgb(75, 75, 75);
     margin: 0px;
 }
+.addressbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.xma {
+    color: black;
+    margin-right: 20px;
+}
