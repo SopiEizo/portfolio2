@@ -20,7 +20,7 @@ const PKget = async (limit=10, offset=0) => {
     const list = document.querySelector('#works-list');
     respnose.contents.forEach((content, index) => {
       const item = document.createElement('div');
-      item.innerHTML =  `<a class="flexia" href="${content.url}"><div class="flex-itemA"><img src="${content.img.url}" class="simg"><h2 class="contentstitle">${content.title}</h2></div></a>`;
+      item.innerHTML =  `<a class="flexia" href="${content.url}"><div class="flexitem"><img src="${content.img.url}" class="simg"><h2 class="contentstitle">${content.title}<br><span class="workclass">${content.class}</span></h2></div></a>`;
       list.appendChild(item);
       }
     )

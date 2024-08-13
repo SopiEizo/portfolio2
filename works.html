@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <title>works</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/mobile/works-base.css" media="screen and (max-width:1023px)">
-        <link rel="stylesheet" href="css/works-base.css" media="screen and (min-width:1024px)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - SopiEizo</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/index.css" type="text/css" media="screen and (max-width:767.9px)">
+    <link rel="stylesheet" href="css/works.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/works.css" type="text/css" media="screen and (max-width:767.9px)">
 
-        <!--Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <!-- moment.jsの読み込み -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- MicroCMSの読み込み -->
-        <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    </head>
-    <body>
-        <div class="workstitle">
-            <div class="Tline inline"></div>
-            <h1 class="inline"><span class="WORKSCSS">WORKS</span><span class="WorksD">Lyrics motion / Motion graphics / 3DCG / MV / Reel</span></h1>
-        </div>
-        <div class="flex-boxw" id="works-list">
-        </div>
-        <div class="leftba">
-            <a href="index.html" style="text-decoration: none;"><div class="back">←</div></a>
-            <h1 class="flex-item1">WORKS</h1>
-            <h1 class="flex-hover"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT</a></h1>
-            <h1 class="flex-hover"><a href="comission.html" style="text-decoration: none; color: white;">COMISSION</a></h1>
-        </div>
-    </body>
-    <script src="./js/works.js"></script>
+    <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="background-color: rgba(255, 222, 173, 0);"><img src="img/rogo.jpg" class="hrogo"></a>
+        <nav>
+            <ul class="hps">
+                <li class="hpsf"><a href="about.html">About</a></li>
+                <li class="hpsf"><a href="works.html">Works</a></li>
+                <li class="hpsf"><a href="comission.html">Comission</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="workc">
+        <h1 class="workstext">Works</h1>
+    </div>
+    <div class="work" id="works-list">
+    </div>
+</body>
+<script src="js/works.js"></script>
 </html>

@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <title>sopieizo.work</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/mobile/index-base.css" media="screen and (max-width:1023px)">
-        <link rel="stylesheet" href="css/index-base.css" media="screen and (min-width:1024px)">
-        
-        <head prefix="og: https://ogp.me/ns#">
-
-            <!-- Open Graph Protocol -->
-            <meta property="og:title" content="sopieizo.work" />
-            <meta property="og:url" content="https://sopieizo.work/" />
-            <meta property="og:image" content="https://sopieizo.work/FssAym4aYAMk3Tm.jpg" />
-            <meta property="og:type" content="website" />
-            <meta name="twitter:site" content="@Sopi_Eizo3" />
-            <meta name="twitter:creator" content="@Sopi_Eizo3" />
-            <meta name="twitter:card" content="player" />
-            
-            
-            <!-- Open Graph Protocol -->
-
-        <!--Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <!-- moment.jsの読み込み -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- MicroCMSの読み込み -->
-        <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    </head>
-    <body>
-        <div class="flex-a">
-            <h1 class="flex-item1"><a href="works.html" class="flex-item1">WORKS</a></h1>
-            <h1 class="flex-hover"><a href="contact.html" style="color: white;">CONTACT</a></h1>
-            <h1 class="flex-hover"><a href="comission.html" style="color: white;">COMISSION</a></h1>
-        </div>
-        <div class="newsbox">
-            <p>news</p>
-            <div class="area2" id="news-list"></div> 
-        </div>
-    </body>
-    <script src="./js/news.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>SopiEizo</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/index.css" type="text/css" media="screen and (max-width:767.9px)">
+    <link rel="stylesheet" href="css/indexbase.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/indexbase.css" type="text/css" media="screen and (max-width:767.9px)">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="background-color: rgba(54, 45, 30, 0);"><img src="img/rogo.jpg" class="hrogo"></a>
+        <nav>
+            <ul class="hps">
+                <li class="hpsf"><a href="about.html">About</a></li>
+                <li class="hpsf"><a href="works.html">Works</a></li>
+                <li class="hpsf"><a href="comission.html">Comission</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="https://youtu.be/01W2kzWJfxc?si=HfHwt1GpnEMyFE6y" class="areel">▶︎</a>
+    <div class="video-area">
+        <video src="img/bgv.webm" autoplay loop muted class="video"></video>
+    </div>
+</body>
 </html>

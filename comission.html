@@ -1,75 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <title>comission</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/comission-base.css" media="screen and (min-width:1024px)">
-        <link rel="stylesheet" href="css//mobile/comission-base.css" media="screen and (max-width:1023px)">
-
-        <!--Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <!-- moment.jsの読み込み -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- MicroCMSの読み込み -->
-        <script src="https://unpkg.com/microcms-js-sdk@latest/dist/umd/microcms-js-sdk.js"></script>
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    </head>
-    <body>
-        <div class="workstitle">
-            <div class="Tline inline"></div>
-            <h1 class="inline"><span class="WORKSCSS">COMISSION</span><span class="WorksD">/// Way to comission</span></h1>
-        </div>
-        <div class="card">
-            <h1 class="title">このページでは映像の依頼の流れについて説明します。</h1>
-        </div>
-        <div class="contactB">
-            <div style="margin-bottom: 5vh;">
-                <h1 class="title">/// 01.見積もり</h1>
-                <hr>
-                <h1 class="content">Sopi_Eizo3のDMにて以下の内容を教えてください</h1>
-                <h1 class="content">・何を作るか（「歌ってみたのMV」など）</h1>
-                <h1 class="content">・納期（目安は1ヶ月です）</h1>
-                <h1 class="content">・予算（詳細は<a href="/contact.html">contact</a>まで）</h1>
-                <h1 class="content">・作る動画の尺</h1>
-                <h1 class="content">・イメージ（指標となる作例や、箇条書き、絵コンテ、なんでもOK！）</h1>
-                <h1 class="content2">※場合によっては、追加で音源やイラスト、曲名などを教えていただくようお願いすることがあります。</h1>
-                <h1 class="content" style="margin-top: 20px;">それらの情報から、納期や料金などをお伝えいたします。もし追加で知りたい情報があれば気軽に質問してください！</h1>
-            </div>
-            <div style="margin-bottom: 5vh;">
-                <h1 class="title">/// 02.素材を渡す</h1>
-                <hr>
-                <h1 class="content">映像の中で使いたい素材（イラストや動画素材など）があればGigaFile便やGoogleドライブなどで送ってください。</h1>
-            </div>
-            <div style="margin-bottom: 5vh;">
-                <h1 class="title">/// 03.制作</h1>
-                <hr>
-                <h1 class="content">MVの場合はサビ前ぐらいまで作れたらGigaFile便にて進捗を送付させていただきます。その際、「ここをこうしてほしい」などのリテイクが必要な場合はお伝えください。</h1>
-                <h1 class="content">リテイクはこちらのミスを除き、無料で3回まで引き受けさせていただきます。4回目以降のリテイクに関しましては、一回につき10,000円を報酬額に加えさせていただきます。</h1>
-            </div>
-            <div style="margin-bottom: 5vh;">
-                <h1 class="title">/// 04.納品</h1>
-                <hr>
-                <h1 class="content">映像が完成して、リテイクのご指示がない場合は、GigaFile便にて納品させていただきます。</h1>
-                <h1 class="content2">※ここでは例としてGigaFile便にて送付 と書いてありますが、「Googleドライブで」など指定することも可能です。</h1>
-            </div>
-            <div style="margin-bottom: 5vh;">
-                <h1 class="title">/// 05.お支払い</h1>
-                <hr>
-                <h1 class="content">お支払いは納品確認から14日以内にお振込みをお願い致します。</h1>
-                <h1 class="content2">※銀行振込でお支払いしていただけると助かります！！🙏</h1>
-            </div>
-        </div>
-        </div>
-        <div class="leftba">
-            <a href="index.html" style="text-decoration: none;"><div class="back">←</div></a>
-            <h1 class="flex-hover"><a href="works.html" style="text-decoration: none; color: white;">WORKS</a></h1>
-            <h1 class="flex-hover"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT</a></h1>
-            <h1 class="flex-item1">COMISSION</h1>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comission - SopiEizo</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/index.css" type="text/css" media="screen and (max-width:767.9px)">
+    <link rel="stylesheet" href="css/comission.css" type="text/css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/mobile/comission.css" type="text/css" media="screen and (max-width:767.9px)">
+    <script src="https://kit.fontawesome.com/9de8a723de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="background-color: rgba(255, 222, 173, 0);"><img src="img/rogo.jpg" class="hrogo"></a>
+        <nav>
+            <ul class="hps">
+                <li class="hpsf"><a href="about.html">About</a></li>
+                <li class="hpsf"><a href="works.html">Works</a></li>
+                <li class="hpsf"><a href="comission.html">Comission</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainbox">
+        <h1 class="comissiontext">Comission</h1>
+        <h2>1.見積もり</h2>
+        <p>XのDMまたは、sopieizo.work@gmail.comにて、以下の内容を教えてください</p>
+        <p>・何を作るか（歌ってみたのMV制作など）</p>
+        <p>・納期（目安は１ヶ月です）</p>
+        <p>・予算（料金の例は<a href="#Fee" style="text-decoration: underline;">こちら</a>）</p>
+        <p>・作る映像の尺または楽曲名</p>
+        <p>・イメージ（指標となる作例や、箇条書き、絵コンテ、なんでもOK！）</p>
+        <p>※場合によっては、追加で音源やイラスト、曲名などを教えていただくようお願いすることがあります。</p>
+        <p>それらの情報から、納期や料金などをお伝えいたします。もし追加で知りたい情報があれば気軽に質問してください！</p>
+        <h2>2.素材を渡す</h2>
+        <p>映像の中で使いたい素材（イラストや動画素材など）があればGigaFile便やGoogleドライブなどで送ってください。</p>
+        <h2>3.制作</h2>
+        <p>MVの場合はサビ前あたりまで完成させ、一度GigaFile便にて進捗を送付させていただきます。その際、「ここをこうしてほしい」などのリテイクが必要な場合はお伝えください。</p>
+        <p>リテイクはこちらのミスを除き、無料で3回まで引き受けさせていただきます。4回目以降のリテイクに関しましては、一回につき3,000円を報酬額に加えさせていただきます。</p>
+        <h2>4.納品</h2>
+        <p>映像が完成して、リテイクのご指示がない場合は、GigaFile便にて納品させていただきます。</p>
+        <h2>5.お支払い</h2>
+        <p>お支払いは納品確認から14日以内にお振込みをお願い致します。</p>
+        <h3 style="color: rgb(172, 172, 172);">お支払い方法</h3>
+        <p>・銀行振込</p>
+        <hr>
+        <h2 id="Fee" class="Fee">料金</h2>_
+        <p>・歌ってみたMV制作<span style="margin-left: 5vw;">60,000円〜</span></p>
+        <p>・オリジナルMV制作<span style="margin-left: 5vw;">80,000円〜</span></p>
+        <p>・YouTubeなどのOP,ED,トランジションなど<span style="margin-left: 5vw;">40,000円〜</span></p>
+        <p>※制作を開始してからのキャンセル料は本来の料金の50%です。</p>
+        <p>※尺や納期、料金によってはお断りする場合がございます。</p>
+        <p>※その他ジャンルの映像の料金は要相談</p>
+        <hr>
+        <h2>その他</h2>
+        <p>通話などでのミーティングの対応は致しかねます。</p>
+    </div>
+</body>
 </html>

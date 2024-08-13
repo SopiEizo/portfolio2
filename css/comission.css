@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.mainbox {
+    padding: 10vw;
+}
+
+.comissiontext{
+    font-size: 80px;
+    color: white;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+}
+
+p {
+    color: rgb(172, 172, 172);
+    font-size: 15px;
+}
+
+.snsflex {
+    display: flex;
+    align-items: center;
+}
+
+.snsbox {
+    border: 1px white solid;
+    border-radius: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 1vw;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.snsa:hover .snsbox {
+    transition: 0.3s;
+    scale: 95%;
+    border: 2px rgb(196, 196, 196) solid;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+}
+
+i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.snsa:hover {
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.Fee {
+    margin-bottom: 0;
+}
