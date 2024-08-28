@@ -1,0 +1,4 @@
+[[redirecys]]
+from = "/contact"
+to = "/comission"
+status = 200
