@@ -19,9 +19,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@next/third-parties": "^15.0.0-canary.131",
+    "@next/third-parties": "^14.2.7",
     "microcms-js-sdk": "^3.1.2",
-    "next": "14.2.5",
+    "next": "^14.2.7",
     "react": "^18",
     "react-dom": "^18",
     "yarn": "^1.22.22"
