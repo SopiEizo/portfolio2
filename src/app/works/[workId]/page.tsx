@@ -7,7 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Works | sopieizo.work',
+};
 
 export async function generateStaticParams(){
   const data = await getWorks();

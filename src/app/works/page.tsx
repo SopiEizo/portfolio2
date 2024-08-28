@@ -3,7 +3,11 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { getWorks } from "../../../libs/client";
 import test from "node:test";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Works | sopieizo.work',
+};
 
 export default async function StaticPage() {
   const contents = await getWorks();

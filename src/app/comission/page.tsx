@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Comission | sopieizo.work',
+};
 
 export default function Home() {
   return (
