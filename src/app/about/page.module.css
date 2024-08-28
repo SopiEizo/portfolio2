@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.main {
+  padding: 10vw;
+}
+
+.ak {
+  text-decoration: underline;
+}
+
+.icons {
+  margin-right: 5px;
+}
+
+.abouttext {
+  font-size: 80px;
+}
+
+.snsflex {
+  display: flex;
+  align-items: center;
+}
+.snsbox {
+    border: 1px white solid;
+    border-radius: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 1vw;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.snsa:hover .snsbox {
+    transition: 0.3s;
+    border: 1px rgb(10, 96, 255) solid;
+}
+
+.snsa:hover {
+
+}
+
+.contdm {
+    font-size: 15px;
+}
+
+.subheading {
+  margin-top: 40px;
+}
+
+.iconflex {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:767.9px) { /* スマホ */
+  .main {
+    padding: 20vh 5vw;
+  }
+
+  .abouttext {
+    font-size: 12vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .snsbox {
+    border: 1px white solid;
+  }
+
+  .snsa:hover .snsbox {
+    border: 1px rgb(10, 96, 255) solid;
+  }
+
+  .snsa:hover {
+      background-color: rgba(240, 248, 255, 0);
+  }
+
+  .contdm {
+      color: white;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .snsbox {
+    border: 1px rgb(0, 0, 0) solid;
+  }
+
+  .snsa:hover .snsbox {
+    border: 1px rgb(10, 96, 255) solid;
+  }
+  
+  .snsa:hover {
+    background-color: rgba(240, 248, 255, 0);
+  }
+
+  .contdm {
+      color: rgb(0, 0, 0);
+  }
+}
