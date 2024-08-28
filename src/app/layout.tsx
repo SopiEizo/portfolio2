@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
       <div className={style1.hheader}>
-        <Link href="/"><Image src="/rogo.jpg" width={40} height={40} className={style1.hrogo} /></Link>
+        <Link href="/"><Image src="/rogo.jpg" alt="logo" width={40} height={40} className={style1.hrogo} /></Link>
         <nav>
             <ul className={style1.hps}>
                 <li className={style1.hlis}><Link href="/about">About</Link></li>

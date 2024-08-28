@@ -16,7 +16,7 @@ export default async function StaticPage() {
                 <div key={work.id}>
                   <Link className={styles.flexia} href={`/works/${work.id}`}>
                     <div className={styles.flexitem}>
-                      <Image src={work.img.url} fill className={styles.simg}/>
+                      <Image src={work.img.url} alt="work image" fill className={styles.simg}/>
                       <h2 className={styles.contentstitle}>{work.title}</h2>
                       <h2 className={styles.workclass}>{work.class}</h2>
                     </div>

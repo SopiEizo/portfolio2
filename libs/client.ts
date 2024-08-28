@@ -2,13 +2,17 @@ import { createClient } from 'microcms-js-sdk';
 import type { MicroCMSQueries } from "microcms-js-sdk";
 
 export type Work = {
-  id: String;
+  id: string;
   title: String;
   body: String;
   class: String;
-  img: String;
+  img: {
+    url: string;
+    height: number;
+    width: number;
+  };
   url: String;
-  yturl: String;
+  yturl: string;
   ymd: String;
   tools: String;
 }
@@ -18,11 +22,8 @@ export const client = createClient({
   apiKey: process.env.API_KEY ||"",
 });
 
-export const getWorks = async (limit=10, offset=0) => {
+export const getWorks = async (limit=10, offset=0): Promise<Work[]> => {
   const works = await client.getList<Work>({
-    customRequestInit: {
-      cache: "no-store",
-    },
     endpoint: "works",
     queries: {
       limit,
@@ -40,9 +41,6 @@ export const getWorks = async (limit=10, offset=0) => {
 
 export const getDetail = async (contentId: string) => {
   const work = await client.getListDetail<Work>({
-    customRequestInit: {
-      cache: "no-store",
-    },
       endpoint: "works",
       contentId
   });

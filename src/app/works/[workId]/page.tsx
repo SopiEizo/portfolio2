@@ -29,7 +29,7 @@ export default async function StaticDetailPage({
   const work = await getDetail(workId);
   const idb = work.yturl;
   const idburl = 'https://www.youtube.com/watch?v=' + idb;
-  const ymdfm = new Date(work.ymd).toLocaleDateString();
+  const ymdfm = new Date(work.ymd as string).toLocaleDateString();
 
   console.log(work.yturl)
 
@@ -41,7 +41,7 @@ export default async function StaticDetailPage({
           <h2 className={styles.title}>{work.title}</h2>
         </div>
         <div className={styles.rightbox}>
-          <YouTubeEmbed videoid={idb} style={{width: '100%'}} />
+          <YouTubeEmbed videoid={idb} style="width: 100%" />
           <div className={styles.aboutbox}>
             <p>Title</p>
             <h3>{work.title}</h3>
@@ -54,7 +54,7 @@ export default async function StaticDetailPage({
           <div dangerouslySetInnerHTML={{__html: `${work.body}`,}}/>
           <h2>Link</h2>
           <div className={styles.linksbox}>
-            <Link href={work.url}><div className={styles.linkbox}><FontAwesomeIcon icon={faXTwitter} width={15} className={styles.icons}/><p>{work.title}</p></div></Link>
+            <Link href={work.url as string}><div className={styles.linkbox}><FontAwesomeIcon icon={faXTwitter} width={15} className={styles.icons}/><p>{work.title}</p></div></Link>
             <Link href={idburl}><div className={styles.linkbox}><FontAwesomeIcon icon={faYoutube} width={15} className={styles.icons}/><p>{work.title}</p></div></Link>
           </div>
         </div>
