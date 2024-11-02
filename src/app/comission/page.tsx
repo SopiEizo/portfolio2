@@ -37,9 +37,9 @@ export default function Home() {
         <p>・銀行振込</p>
         <div className={styles.hr}>
           <h2 id="Fee" className={styles.Fee}>料金</h2>
-          <p>・歌ってみたMV制作<span className={styles.Feenum}>60,000円〜</span></p>
-          <p>・オリジナルMV制作<span className={styles.Feenum}>80,000円〜</span></p>
-          <p>・YouTubeなどのOP,ED,トランジションなど<span className={styles.Feenum}>40,000円〜</span></p>
+          <p>・歌ってみたMV制作<span className={styles.Feenum}>40,000円〜</span></p>
+          <p>・オリジナルMV制作<span className={styles.Feenum}>50,000円〜</span></p>
+          <p>・YouTubeなどのOP,ED,トランジションなど<span className={styles.Feenum}>20,000円〜</span></p>
           <p>※制作を開始してからのキャンセル料は本来の料金の50%です。</p>
           <p>※尺や納期、料金によってはお断りする場合がございます。</p>
           <p>※その他ジャンルの映像の料金は要相談</p>
