@@ -1,0 +1,149 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/contact/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+@charset "utf-8";
+
+.page_main__c0U7_ {
+  padding-left: 10vw;
+  padding-top: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vw;
+}
+
+.page_ak__gwbmd {
+  text-decoration: underline;
+}
+
+.page_contacttext__SxoXd {
+  font-size: 80px;
+}
+
+.page_cformtext__ZwSOG {
+  height: 2.4em;
+  width: 50%;
+  padding: 0 16px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+  border-right: 0px solid;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(227, 227, 227);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+}
+.page_cformtext__ZwSOG:focus {
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+
+  outline: 0;
+  border-bottom: 1.5px solid rgb(0, 64, 254);
+}
+
+.page_cformemail__v3QrI {
+  height: 2.4em;
+  width: 50%;
+  padding: 0 16px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+  border-right: 0px solid;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(227, 227, 227);
+  box-shadow: 00px 0px 0px 0px rgba(0, 0, 0, 0);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+}
+.page_cformemail__v3QrI:focus {
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+
+  outline: 0;
+  border-bottom: 1.5px solid rgb(0, 64, 254);
+}
+
+.page_cformtextarea__wVKJB {
+  height: 7em;
+  width: 50%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: 1px solid rgb(138, 138, 138);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(227, 227, 227);
+  box-shadow: 00px 0px 0px 0px rgba(0, 0, 0, 0);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+}
+.page_cformtextarea__wVKJB:focus {
+  -webkit-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -moz-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -o-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  -ms-transition:  0.5s cubic-bezier(0,.68,0,1.01);
+  transform: 0.5s cubic-bezier(0,.68,0,1.01);
+
+  height: 10em;
+  outline: 0;
+  border: 1.5px solid rgb(0, 64, 254);
+}
+
+.page_cformbutton__O_8_V {
+  padding: 8px 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.3px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  color: white;
+}
+.page_cformbutton__O_8_V:focus {
+  cursor: pointer;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.003);
+  border: 1.3px solid rgb(0, 64, 254);
+}
+
+.page_formitem__GABok {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width:767.9px) { /* スマホ */
+  .page_main__c0U7_ {
+    padding: 20vh 5vw;
+  }
+
+  .page_comissiontext__9EwRz {
+    font-size: 12vw;
+    margin-bottom: 2vh;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@media (prefers-color-scheme: light) {
+
+}

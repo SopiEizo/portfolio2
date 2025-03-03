@@ -5,6 +5,7 @@ import Image from 'next/image'
 import "./globals.css";
 import style1 from "./layout.module.css"
 import Link from "next/link";
+import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,10 +36,12 @@ export default function RootLayout({
                 <li className={style1.hlis}><Link href="/about">About</Link></li>
                 <li className={style1.hlis}><Link href="/works">Works</Link></li>
                 <li className={style1.hlis}><Link href="/comission">Comission</Link></li>
+                <li className={style1.hlis}><Link href="/contact">Contact</Link></li>
             </ul>
         </nav>
       </div>
         {children}
+        <Toaster />
         </body>
     </html>
   );
