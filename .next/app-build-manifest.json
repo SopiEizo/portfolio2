@@ -11,36 +11,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/contact/thanks/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contact/thanks/page.css",
-      "static/chunks/app/contact/thanks/page.js"
-    ],
-    "/comission/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/comission/page.css",
-      "static/chunks/app/comission/page.js"
-    ],
-    "/works/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/works/page.css",
-      "static/chunks/app/works/page.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about/page.css",
-      "static/chunks/app/about/page.js"
-    ],
-    "/works/[workId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/works/[workId]/page.css",
-      "static/chunks/app/works/[workId]/page.js"
     ]
   }
 }
