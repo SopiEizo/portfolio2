@@ -16,7 +16,7 @@ export default function Home() {
     <main className={styles.main}>
         <h1 className={styles.comissiontext}>Comission</h1>
         <h2>1.見積もり</h2>
-        <p>XのDMまたは、sopieizo.work@gmail.comにて、以下の内容を教えてください</p>
+        <p>XのDMまたは、sopieizo@shiftz.workにて、以下の内容を教えてください</p>
         <p>・何を作るか（歌ってみたのMV制作など）</p>
         <p>・納期（目安は１ヶ月です）</p>
         <p>・予算（料金の例は<a href="#Fee">こちら</a>）</p>
