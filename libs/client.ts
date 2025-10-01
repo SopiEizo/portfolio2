@@ -15,6 +15,7 @@ export type Work = {
   yturl: string;
   ymd: String;
   tools: String;
+  color: string;
 }
 
 export const client = createClient({
@@ -24,6 +25,9 @@ export const client = createClient({
 
 export const getWorks = async (limit=10, offset=0): Promise<Work[]> => {
   const works = await client.getList<Work>({
+    customRequestInit: {  //後で必ず消す
+      cache: "no-store",
+    },
     endpoint: "works",
     queries: {
       limit,
@@ -41,6 +45,9 @@ export const getWorks = async (limit=10, offset=0): Promise<Work[]> => {
 
 export const getDetail = async (contentId: string) => {
   const work = await client.getListDetail<Work>({
+      customRequestInit: {  //後で必ず消す
+        cache: "no-store",
+      },
       endpoint: "works",
       contentId
   });

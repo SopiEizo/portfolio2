@@ -8,6 +8,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { Metadata } from 'next';
+import styled from '@emotion/styled'
 
 export const metadata: Metadata = {
   title: 'Works | sopieizo.work',
@@ -21,7 +22,6 @@ export async function generateStaticParams(){
       workId: work.id,
     }
   });
-  console.log(paths)
   return paths;
 }
 
@@ -34,33 +34,55 @@ export default async function StaticDetailPage({
   const idb = work.yturl;
   const idburl = 'https://www.youtube.com/watch?v=' + idb;
   const ymdfm = new Date(work.ymd as string).toLocaleDateString();
-
-  console.log(work.yturl)
+  
+  console.log(work);
 
   return(
     <main className={styles.main}>
-      <div className={styles.flex}>
-        <div className={styles.leftbox}>
-          <h3 className={styles.class}>#{work.class}</h3>
-          <h2 className={styles.title}>{work.title}</h2>
+      <div className={styles.thumb}>
+        <div className={styles.titleflex1}>
+          <div className={styles.titleflex2}>
+            <div>
+              <h1 className={styles.title}>{work.title}</h1>
+              <p>Client work</p>
+            </div>
+            <div>
+              <Link href={idburl}><div className={styles.playbutton}>Play</div></Link>
+            </div>
+          </div>
         </div>
-        <div className={styles.rightbox}>
-          <YouTubeEmbed videoid={idb} style="width: 100%" />
-          <div className={styles.aboutbox}>
-            <p>Title</p>
-            <h3>{work.title}</h3>
-            <p>Date</p>
-            <h3>{ymdfm}</h3>
-            <p className={styles.about}>Tools</p>
-            <h3>{work.tools}</h3>
+        <div className={styles.gra}></div>
+        <Image src={work.img.url} fill sizes="100vw" className={styles.image}></Image>
+      </div>
+      <div className={styles.content}>
+        <div className={styles.infoarea}>
+          <div className={styles.info}>
+            <p>Client</p>
+            <p className={styles.credit}>Shikido</p>
           </div>
-          <h2>About</h2>
-          <div dangerouslySetInnerHTML={{__html: `${work.body}`,}}/>
-          <h2>Link</h2>
-          <div className={styles.linksbox}>
-            <Link href={work.url as string}><div className={styles.linkbox}><FontAwesomeIcon icon={faXTwitter} width={15} className={styles.icons}/><p>{work.title}</p></div></Link>
-            <Link href={idburl}><div className={styles.linkbox}><FontAwesomeIcon icon={faYoutube} width={15} className={styles.icons}/><p>{work.title}</p></div></Link>
+          <div className={styles.info}>
+            <p>Illust</p>
+            <p className={styles.credit}>ネプロギウス</p>
           </div>
+          <div className={styles.info}>
+            <p>Movie</p>
+            <p className={styles.credit}>SopiEizo</p>
+          </div>
+          <div className={styles.info}>
+            <p>Editing Assistant</p>
+            <p className={styles.credit}>Imai Yuji</p>
+          </div>
+          <div className={styles.info}>
+            <p>Camera</p>
+            <p className={styles.credit}>じゃがさん</p>
+          </div>
+          <div className={styles.info}>
+            <p>Camera Assistant</p>
+            <p className={styles.credit}>よみや</p>
+          </div>
+        </div>
+        <div className={styles.desc}>
+          <p>shikidoさん{work.color}の新曲「i世界 / 初音ミク」のMVを制作しました。<br/>コンポジットやリリックモーション、3DCGを担当しています。<br/>この楽曲のコンセプトである「世界」を実写映像を基盤に表現し、グリッチ音に合わせてDataMoshや多彩なグリッチエフェクトを組み合わせることで、聴覚と視覚の双方から楽しめる映像作品を制作しました。</p>
         </div>
       </div>
     </main>
