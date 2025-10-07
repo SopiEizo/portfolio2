@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/about.css';
+
+import { Icon } from "astro-icon/components";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="About | sopieizo.work">
+	<main class="section-wrapper">
+		<div class="left">
+			<h1 class="title title-anim">About</h1>
+		</div>
+		<div class="center">
+			<div class="center-wrapper">
+				<h3 class="center-item anim-name">01 name</h3>
+				<h3 class="center-item anim-skill" id="center-item">02 skill</h3>
+				<h3 class="center-item anim-tool">03 tool</h3>
+				<h3 class="center-item anim-contact">04 contact</h3>
+			</div>
+		</div>
+		<div class="right">
+			<div class="section section1">
+				<h2 class="sopieizo">SopiEizo</h2>
+				<p>2020年から二次創作のMVやモーショングラフィックスなどを軸に作品制作をしています。</p>
+				<div style="display: flex;">
+					<a class="linkbutton" href="https://twitter.com/Sopi_Eizo3"><Icon name="proicons:x-twitter" style="margin-right: .2rem;" />Twitter</a>
+					<a class="linkbutton" href="https://www.youtube.com/@Sopi_Eizo"><Icon name="proicons:youtube" style="margin-right: .2rem;" />YouTube</a>
+				</div>
+			</div>
+			<div class="section section2">
+				<h2>Skill</h2>
+				<p>MV / 3DCG / Motion Design / Graphic Design</p>
+			</div>
+			<div class="section section3">
+				<h2>Tool</h2>
+				<p>After Effects / Blender / Premiere Pro / Photoshop / Illustrator / Figma</p>
+			</div>
+			<div class="section section4">
+				<h2>Contact</h2>
+				<p>Mail: sopieizo@shiftz.work</p>
+				<p>Twitter: @Sopi_Eizo3</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	import animation from '@/scripts/animation';
+	animation();
+</script>

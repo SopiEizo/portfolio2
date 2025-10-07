@@ -1,0 +1,54 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/workId.css';
+
+import { getWorks, getWorkDetail } from '@/library/microcms';
+
+export async function getStaticPaths() {
+  const response = await getWorks();
+  return response.map((content: any) => ({
+    params: {
+      workId: content.id,
+    },
+  }));
+}
+
+const { workId } = Astro.params;
+const work = await getWorkDetail(workId as string)
+
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Works | sopieizo.work">
+	<main>
+    <div class="section-thumb">
+      <div class="title-area">
+        <div>
+          <h1 class="title">{work.title}</h1>
+          <h1 class="title-class">{work.class}</h1>
+        </div>
+        <a href={work.yturl} class="playbutton"><p>Play</p></a>
+      </div>
+      <div class="gradient" style=`background: linear-gradient(0deg,${work.color} 0%, rgba(112, 112, 112, 0) 30%);`></div>
+      <img src={work.img.url} alt={work.title} class="thumb" />
+    </div>
+    <div class="section-contents" style=`background: linear-gradient(180deg,${work.color} 0%, rgba(112, 112, 112, 0) 100px);`>
+      <div class="info-area">
+        <div class="info-body" set:html={work.credit}>
+        </div>
+      </div>
+    </div>
+    <div class="section-description" set:html={work.body}>
+    </div>
+	</main>
+</Layout>
+
+<script>
+	import animation from '@/scripts/animation';
+	animation();
+</script>

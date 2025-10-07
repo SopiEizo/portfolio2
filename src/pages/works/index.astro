@@ -1,0 +1,42 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import '@/styles/works.css';
+
+import { getWorks } from '@/library/microcms';
+const response = await getWorks();
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="sopieizo.work">
+	<main>
+		<div class="left">
+			<h1 class="title">Works</h1>
+		</div>
+		<div class="right">
+			{
+				response.map((content: any) => (
+					<a href={`works/${content.id}`}>
+						<div class="work-container">
+							<img src={content.img.url} class="workimg" />
+							<div class="worktitlearea">
+								<h2 class="worktitle">{content.title}</h2>
+								<p>{content.class}</p>
+							</div>
+						</div>
+					</a>
+				))
+			}
+
+		</div>
+	</main>
+</Layout>
+
+<script>
+	import animation from '@/scripts/animation';
+	animation();
+</script>

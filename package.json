@@ -1,38 +1,22 @@
 {
-  "name": "sopieizo.work",
-  "version": "0.1.0",
-  "private": true,
+  "name": "second-series",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "rm -rf .next/cache/fetch-cache && next build",
-    "start": "serve out",
-    "lint": "next lint",
-    "export": "next build",
-    "deploy": "npm run build && npm run export"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4",
-    "@babel/preset-react": "^7.24.7",
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@next/third-parties": "^14.2.7",
-    "microcms-js-sdk": "^3.1.2",
-    "next": "^14.2.7",
-    "react": "^18",
-    "react-dom": "^18",
-    "yarn": "^1.22.22"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "serve": "^14.2.3",
-    "typescript": "^5"
+    "@fontsource-variable/montserrat": "^5.2.8",
+    "@fontsource-variable/noto-sans-jp": "^5.2.9",
+    "@iconify-json/proicons": "^1.2.17",
+    "astro": "^5.14.1",
+    "astro-icon": "^1.1.5",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.11",
+    "microcms-js-sdk": "^3.2.0",
+    "midnight.js": "^1.1.1"
   }
 }
