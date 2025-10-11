@@ -51,7 +51,7 @@ export const getWorkDetail = async (
     endpoint: "works",
     contentId,
     queries: {
-      draftKey: 'xaNzZdXSca',
+      
     },
   });
 };
