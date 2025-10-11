@@ -18,20 +18,22 @@ gsap.registerPlugin(ScrollTrigger);
 			<h1 class="title">Works</h1>
 		</div>
 		<div class="right">
-			{
-				response.map((content: any) => (
-					<a href={`works/${content.id}`}>
-						<div class="work-container">
-							<img src={content.img.url} class="workimg" />
-							<div class="worktitlearea">
-								<h2 class="worktitle">{content.title}</h2>
-								<p>{content.class}</p>
+			<div class="workslist">
+				{
+					response.map((content: any) => (
+						<a href={`works/${content.id}`}>
+							<div class="work-container">
+								<img src={content.img.url} class="workimg" />
+								<div class="worktitlearea">
+									<h2 class="worktitle">{content.title}</h2>
+									<p>{content.class}</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				))
-			}
-
+						</a>
+					))
+				}
+			</div>
+			<a href="works/all-works" class="linkbutton"><p>作品一覧</p></a>
 		</div>
 	</main>
 </Layout>

@@ -50,6 +50,8 @@ export const getWorkDetail = async (
   return await client.getListDetail<work>({
     endpoint: "works",
     contentId,
-    queries,
+    queries: {
+      draftKey: 'xaNzZdXSca',
+    },
   });
 };
