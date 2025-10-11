@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/about.css';
+
+import { Icon } from "astro-icon/components";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="About | sopieizo.work">
+	<main class="section-wrapper">
+		<div class="left">
+			<h1 class="title">Comission</h1>
+		</div>
+		<div class="right">
+			<div class="section section1">
+				<h2>このページは現在整備中です</h2>
+				<p>ご依頼の相談やご連絡は、sopieizo@shiftz.workへ</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	import animation from '@/scripts/animation';
+	animation();
+</script>

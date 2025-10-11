@@ -17,3 +17,8 @@ h3 {
 p {
     font-family: "Montserrat Variable", 'Noto Sans JP Variable', sans-serif;
 }
+
+.twitter-tweet {
+    min-height: 500px;
+    max-height: 1000px;
+}

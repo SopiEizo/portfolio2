@@ -24,7 +24,7 @@ const animation = () => {
             trigger: ".section2",
             start: "top center",
             end: "bottom top",
-            markers: true,
+            markers: false,
             scrub: true,
     },
     y: h*-1+centerItemh,})
@@ -33,7 +33,7 @@ const animation = () => {
             trigger: ".section3",
             start: "top center",
             end: "bottom top",
-            markers: true,
+            markers: false,
             scrub: true,
     },
     y: h*-1+centerItemh*2,})
@@ -42,7 +42,7 @@ const animation = () => {
             trigger: ".section4",
             start: "top center",
             end: "bottom top",
-            markers: true,
+            markers: false,
             scrub: true,
     },
     y: h*-1+centerItemh*3,})
@@ -51,7 +51,7 @@ const animation = () => {
             trigger: ".section-wrapper",
             start: "top top",
             end: "bottom bottom",
-            markers: true,
+            markers: false,
             scrub: true,
     },
     y: h,})
@@ -69,7 +69,7 @@ const animation = () => {
                 trigger: ".work-container",
                 toggleActions: "play none none reverse",
                 start: "top center",
-                markers: true,
+                markers: false,
             }
         }
     )
