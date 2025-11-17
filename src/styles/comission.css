@@ -8,24 +8,16 @@ main {
     left: 0;
     margin: 0 auto;
 }
+
 h2 {
-    color: rgb(234, 230, 230);
-    margin: 0;
-    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    margin: 50px 0 10px 0;
+    font-size: 2rem;
     font-weight: 600;
 }
-h3 {
-    color: rgb(81, 81, 81);
-    font-size: 1.5rem;
-    font-weight: 300;
-}
+
 p {
-    color: rgb(192, 192, 192);
-    font-size: 1rem;
-    font-weight: 100;
-    letter-spacing: .08rem;
-    line-height: 1.8;
-    width: 80%;
+    color: rgb(211, 211, 211);
 }
 
 .left {
@@ -33,14 +25,6 @@ p {
     text-align: left;
 }
 
-.center {
-    flex-grow: 1;
-    text-align: left;
-    height: 100vh;
-}
-.center-wrapper {
-    position: fixed;
-}
 .right {
     flex-grow: 3;
     text-align: left;
@@ -50,15 +34,10 @@ p {
 
 .title {
     color: rgb(192, 192, 192);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     margin: 0;
     margin-top: 30vh;
-}
-
-.sopieizo {
-    display: inline-block;
-    background-color: rgb(31, 99, 235);
 }
 
 .linkbutton {
@@ -95,11 +74,7 @@ p {
     }
 
     .right {
-        padding-top: 0;
+        margin-top: 0;
         padding-left: 0;
-    }
-
-    .center {
-        opacity: 0;
     }
 }

@@ -147,3 +147,29 @@ main {
 .content-subtitle {
     color: rgb(225, 225, 225);
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .right {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .work-container {
+        border-radius: 10px;
+    }
+    .work-container .workimg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .work-container:hover .workimg {
+        scale: 98%;
+        transition: 0.3s;
+    }
+}

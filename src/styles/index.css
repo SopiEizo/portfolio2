@@ -39,3 +39,9 @@ main video {
     font-weight: 500;
     margin: 10px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: 100svh;
+    }
+}

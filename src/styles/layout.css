@@ -13,6 +13,7 @@ a {
     margin: 0px 5px;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-size: 1rem;
     transition: 0.3s;
 }
 a:hover {
@@ -22,4 +23,10 @@ a:hover {
 
 .lenis {
     scroll-behavior: auto;
+}
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: 1.5rem;
+    }
 }

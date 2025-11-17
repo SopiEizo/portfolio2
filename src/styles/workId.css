@@ -131,6 +131,9 @@ h2 {
     line-height: 1.6;
     letter-spacing: 1px;
 }
+.section-description a {
+    font-size: 1rem;
+}
 .section-description img {
     width: 90%;
     height: auto;
@@ -152,4 +155,18 @@ h2 {
     color: rgb(211, 211, 211);
     font-size: 0.8rem;
     font-weight: 300;
+}
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .section-description {
+        width: 80%;
+    }
+    .section-description p {
+        line-height: 1.6;
+        letter-spacing: 1px;
+        font-size: 16   px;
+    }
 }
